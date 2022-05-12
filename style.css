@@ -1,10 +1,52 @@
 :root{
     --so__yellow: #FFCE04;
     --footerBg: #011A4A;
+    --so__title: #003B57;
+    --so__paragraph: #00547B;
 
 }
 body{
     font-family: 'Museo Sans Rounded 500';
+}
+/* WHY. BET ONLINE  */
+
+.bet__online{
+    background-color: #F8F8F8;
+}
+.bet__online-title{
+    color: var(--so__title);
+    font-size: 1.5rem;
+}
+.bet__online-icons{
+    width: 44px;
+    height: auto;
+}
+.bet__online-img{
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    right: 0;
+}
+.bet__online-desc{
+    font-size: 1.25rem;
+    color: var(--so__paragraph);
+}
+
+.bet__online__desc-title{
+    color: var(--so__title);
+}
+.bet__online__desc-title::before{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-bottom: .5rem;
+    color: var(--so__title);
+    background-color: #00A0E9;
+}
+.bet__online__desc-p{
+    color: #050505;
+    font-size: .85rem;
 }
 /* footer  */
 .footer{
@@ -17,10 +59,9 @@ body{
     color: white;
 }
 .footer__header{}
-
-.footer__header-title{
-    font-size: 1.15rem;
-}
+    .footer__header-title{
+        font-size: 1.15rem;
+    }
 /* Footer Subscribe  */
 .btn__subcribe{
     background: var(--so__yellow);
@@ -36,13 +77,12 @@ body{
 
 /* Footer Widget  */
 .footer__widget{
-
 }
 .footer__widget-title{
     font-size: 1rem;
 }
 .footer__widget-title::after{
-    margin-top: .35rem;
+    margin-top: .5rem;
     content: '';
     display: block;
     width: 50px;
@@ -73,8 +113,21 @@ body{
         
     }
 
-
 @media only screen and (max-width: 480px) {
+    .bet__online-wrapper{
+        margin-bottom: 10rem !important;
+    }
+    .bet__online-content{
+        padding-bottom: 5rem;
+    }
+    .bet__online-img{
+        width: 75%;
+        left:-50px;
+        bottom: -160px;
+    }
+    .bet__online__desc{
+        padding: 5rem 0;
+    }
     .footer{
         background-position: 20% center;
     }
