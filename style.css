@@ -1,17 +1,58 @@
 :root{
+    --so__yellow: #FFCE04;
     --footerBg: #011A4A;
+
 }
 body{
     font-family: 'Museo Sans Rounded 500';
 }
 /* footer  */
 .footer{
+    background-image: url('./assets/img/footer__bg.png');
     background-color: var(--footerBg);
+    background-position: center center;
     color: white;
 }
 .footer a {
     color: white;
 }
+.footer__header{}
+
+.footer__header-title{
+    font-size: 1.15rem;
+}
+/* Footer Subscribe  */
+.btn__subcribe{
+    background: var(--so__yellow);
+    color: #000;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.footer__subs-input{
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Footer Widget  */
+.footer__widget{
+
+}
+.footer__widget-title{
+    font-size: 1rem;
+}
+.footer__widget-title::after{
+    margin-top: .35rem;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: var(--so__yellow);
+}
+.footer__widget-list{
+    font-size: .85rem;
+}
+
 .copyrights{
     font-size: .85rem;
 }
@@ -34,11 +75,20 @@ body{
 
 
 @media only screen and (max-width: 480px) {
+    .footer{
+        background-position: 20% center;
+    }
     .social__icon{
         margin-top: 1.5rem;
     }
     .copyright__18-img{
         width: 48px;
         margin: 1rem 0;
+    }
+    .btn__subcribe{
+        width: 100%;
+    }
+    .footer__logo{
+        display: none;
     }
 }
