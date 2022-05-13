@@ -25,13 +25,54 @@ body{
     .btn__so:active, .btn__so:focus, .btn__so:hover{
         background-color: var(--so__yellow);
     }
-
+.btn__so-small{
+    padding: .5rem 1rem;
+}
+.btn__so-yellow{
+    background-color: var(--so__yellow);
+    color: var(--so__paragraph);
+}
 .btn__so--outline{
     border: 1px solid var(--so__outline);
 }
     .btn__so--outline:hover{
         background-color: var(--so__outline);
     }
+
+/* TIPS      */
+.tips{
+    background-color: var(--so__bgLightBlue);
+}
+.tips__content-tabs{
+    border: none
+}
+.tips__content-tabs-link{
+    color: #050505 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+.tips__content-tabs .nav-link.active{
+    border-bottom: 1px solid var(--so__yellow)  !important;
+}
+.tab__card{
+    background: #fff;
+}
+    .tab__card-name img{
+        width: 50px;
+        height: auto;
+    }
+    .tab__card-team{
+        font-size: 1.25rem;
+        color: var(--so__title);
+    }
+    .tab__card-vs{
+        font-size: .95rem;
+        color: #AAAAAA;
+    }
+    .tab__card-time{
+        font-size: 1rem;
+    }
+
 /* BlOG  */
 .blog{
     background: var(--so__bgLightBlue);
