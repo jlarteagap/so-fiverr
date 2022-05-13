@@ -5,6 +5,7 @@
     --so__paragraph: #00547B;
     --so__bgLightBlue: #F0F8FD;
     --so__outline: #BAE5F8;
+    --so__blueLight: #00A0E9;
 }
 body{
     font-family: 'Museo Sans Rounded 500';
@@ -51,8 +52,14 @@ body{
     background-color: transparent !important;
     border: none !important;
 }
-.tips__content-tabs .nav-link.active{
-    border-bottom: 1px solid var(--so__yellow)  !important;
+.tips__content-tabs .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: var(--so__yellow);
+    position: absolute;
+    margin-top: .5rem;
 }
 .tab__card{
     background: #fff;
@@ -73,6 +80,28 @@ body{
         font-size: 1rem;
     }
 
+        .tab__card-info-data{
+            font-size: .9rem;
+            color: #AAAAAA;
+        }
+
+        .tab__card-footer-like-text{
+            font-size: .75rem;
+        }
+        .tab__card-footer-comment-number{
+            color: var(--so__blueLight);
+            width: 23px;
+            height: 23px;
+            font-size: .75rem;
+            background-color: var(--so__bgLightBlue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            bottom: 0px;
+            right: -10px;
+        }
 /* BlOG  */
 .blog{
     background: var(--so__bgLightBlue);
@@ -80,7 +109,7 @@ body{
 .blog__header-title{
     color: var(--so__title);
 }
-.blog__card{}
+
     .blog__card-img{
         height: 180px;
     }
@@ -167,7 +196,7 @@ body{
 .footer a {
     color: white;
 }
-.footer__header{}
+
     .footer__header-title{
         font-size: 1.15rem;
     }
@@ -185,8 +214,6 @@ body{
 }
 
 /* Footer Widget  */
-.footer__widget{
-}
 .footer__widget-title{
     font-size: 1rem;
 }
@@ -238,12 +265,12 @@ body{
         padding: 5rem 0;
     }
     /* Blog  */
-    .blog__card{
+    .blog__card, .tab-pane, .tips__content-tabs{
         display: block;
         overflow-x: auto;
         white-space: nowrap;
     }
-    .blog__card .col-10{
+    .blog__card .col-10, .tab-pane .tab__card, .tips__content-tabs .tips__content-tabs-link{
         display: inline-block;
     }
     .blog__card-title, .blog__card-extract{

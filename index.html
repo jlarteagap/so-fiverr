@@ -18,7 +18,7 @@
 
     </header>
     <!-- Tips  -->
-    <section class="tips">
+    <section class="tips py-5">
         <div class="container">
             <div class="tips__header">
                 <h2 class="tips__header-title f900">Fotbalové tipy našich uživatelů </h2>
@@ -58,9 +58,9 @@
                         </button>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab__content-data tab-content mt-4" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="tab__card col-10 p-3">
+                        <div class="tab__card col-10 col-md-12 p-3">
                             <div class="tab__card-name d-flex align-items-center gap-3">
                                 <img src="./assets/img/leagues/premier.png" alt="" srcset="">
                                 <a href="#" class="btn btn__so btn__so-small btn__so-yellow">Premier League 2021</a>
@@ -69,7 +69,65 @@
                                 <div class="tab__card-team1 f900">Itálie</div>
                                 <div class="tab__card-vs">vs</div>
                                 <div class="tab__card-team2 f900">Bosna a Hercegovina</div>
-                                <div class="tab__card-time f700 d-flex align-items-center gap-2 mt-2"><img src="./assets/img/clock.svg" /> 14.3. v 20:00</div>
+                                <div class="tab__card-time f700 d-flex align-items-center gap-2 mt-2"><img src="./assets/img/icons/clock.svg" /> 14.3. v 20:00</div>
+                            </div>
+                            <div class="tab__card-info d-flex justify-content-between align-items-sm-end mt-3">
+                                <div class="tab__card-info-short d-flex flex-column align-items-center">
+                                    <div class="tab__card-info-data">Kurz</div>
+                                    <div class="f700">2.13</div>
+                                </div>
+                                <div class="tab__card-info-desposit d-flex flex-column align-items-center">
+                                    <div class="tab__card-info-data">Vklad</div>
+                                    <div class="f700">1/10</div>
+                                </div>
+                                <div class="tab__card-info-ok d-flex flex-column align-items-center">
+                                    <div class="f700">1/2 OK</div>
+                                </div>
+                            </div>
+                            <div class="tab__card-footer mt-3 d-flex gap-3">
+                                <div class="tab__card-footer-like d-flex align-items-center gap-2">
+                                    <img src="./assets/img/icons/heart.svg" alt="like" />
+                                    <div class="tab__card-footer-like-text">Uložit</div>
+                                </div>
+                                <div class="tab__card-footer-comment position-relative">
+                                    <img src="./assets/img//icons/comments.svg" alt="">
+                                    <div class="tab__card-footer-comment-number position-absolute">12</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab__card col-10 col-md-12 p-3">
+                            <div class="tab__card-name d-flex align-items-center gap-3">
+                                <img src="./assets/img/leagues/premier.png" alt="" srcset="">
+                                <a href="#" class="btn btn__so btn__so-small btn__so-yellow">Premier League 2021</a>
+                            </div>
+                            <div class="tab__card-team">
+                                <div class="tab__card-team1 f900">Itálie</div>
+                                <div class="tab__card-vs">vs</div>
+                                <div class="tab__card-team2 f900">Bosna a Hercegovina</div>
+                                <div class="tab__card-time f700 d-flex align-items-center gap-2 mt-2"><img src="./assets/img/icons/clock.svg" /> 14.3. v 20:00</div>
+                            </div>
+                            <div class="tab__card-info d-flex justify-content-between align-items-sm-end mt-3">
+                                <div class="tab__card-info-short d-flex flex-column align-items-center">
+                                    <div class="tab__card-info-data">Kurz</div>
+                                    <div class="f700">2.13</div>
+                                </div>
+                                <div class="tab__card-info-desposit d-flex flex-column align-items-center">
+                                    <div class="tab__card-info-data">Vklad</div>
+                                    <div class="f700">1/10</div>
+                                </div>
+                                <div class="tab__card-info-ok d-flex flex-column align-items-center">
+                                    <div class="f700">1/2 OK</div>
+                                </div>
+                            </div>
+                            <div class="tab__card-footer mt-3 d-flex gap-3">
+                                <div class="tab__card-footer-like d-flex align-items-center gap-2">
+                                    <img src="./assets/img/icons/heart.svg" alt="like" />
+                                    <div class="tab__card-footer-like-text">Uložit</div>
+                                </div>
+                                <div class="tab__card-footer-comment position-relative">
+                                    <img src="./assets/img//icons/comments.svg" alt="">
+                                    <div class="tab__card-footer-comment-number position-absolute">12</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,12 +136,19 @@
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
                     </div>
                     <div class="tab-pane fade" id="basketball" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        Basketball.</div>
+                        Basketball.
+                    </div>
                     <div class="tab-pane fade" id="extraliga" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        Extraliga..</div>
+                        Extraliga..
+                    </div>
                     <div class="tab-pane fade" id="premier-league" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        Premier League</div>
+                        Premier League
+                    </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a class="btn btn__so btn__so--outline" href="#">Zobrazit více tipů <img src="./assets/img/icons/arrow-left.svg" alt="" /> </a>
             </div>
         </div>
     </section>
@@ -116,7 +181,7 @@
                     </p>
 
                     <a class="btn btn__so">
-                        Přečíst článek <img src="./assets/img/arrow-left.svg" />
+                        Přečíst článek <img src="./assets/img/icons/arrow-left.svg" />
                     </a>
                 </div>
                 <div class="col-10 col-md-3">
@@ -143,7 +208,7 @@
                     </p>
 
                     <a class="btn btn__so">
-                        Přečíst článek <img src="./assets/img/arrow-left.svg" />
+                        Přečíst článek <img src="./assets/img/icons/arrow-left.svg" />
                     </a>
                 </div>
                 <div class="col-10 col-md-3">
@@ -170,7 +235,7 @@
                     </p>
 
                     <a class="btn btn__so">
-                        Přečíst článek <img src="./assets/img/arrow-left.svg" />
+                        Přečíst článek <img src="./assets/img/icons/arrow-left.svg" />
                     </a>
                 </div>
                 <div class="col-10 col-md-3">
@@ -197,7 +262,7 @@
                     </p>
 
                     <a class="btn btn__so">
-                        Přečíst článek <img src="./assets/img/arrow-left.svg" />
+                        Přečíst článek <img src="./assets/img/icons/arrow-left.svg" />
                     </a>
                 </div>
             </div>
@@ -361,10 +426,10 @@
             class="container-fluid copyrights d-flex justify-content-between align-items-center gap-3 flex-column flex-sm-row">
             <div class="copyrights__social d-flex gap-2 order-1">
                 <div class="social__icon d-flex justify-content-center align-items-center">
-                    <img class="social__icon-facebook" src="./assets/img/facebook.svg" alt="Facebook">
+                    <img class="social__icon-facebook" src="./assets/img/icons/facebook.svg" alt="Facebook">
                 </div>
                 <div class="social__icon d-flex justify-content-center align-items-center">
-                    <img class="social__icon-instagram" src="./assets/img/instagram.svg" alt="Instagram">
+                    <img class="social__icon-instagram" src="./assets/img/icons/instagram.svg" alt="Instagram">
                 </div>
             </div>
             <div class="copyrights__texts order-2">Všechna práva vyhrazena (C) - 2004 - 2021</div>
