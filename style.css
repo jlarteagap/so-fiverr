@@ -4,7 +4,7 @@
     --so__title: #003B57;
     --so__paragraph: #00547B;
     --so__bgLightBlue: #F0F8FD;
-
+    --so__outline: #BAE5F8;
 }
 body{
     font-family: 'Museo Sans Rounded 500';
@@ -24,6 +24,13 @@ body{
 }
     .btn__so:active, .btn__so:focus, .btn__so:hover{
         background-color: var(--so__yellow);
+    }
+
+.btn__so--outline{
+    border: 1px solid var(--so__outline);
+}
+    .btn__so--outline:hover{
+        background-color: var(--so__outline);
     }
 /* BlOG  */
 .blog{
@@ -188,6 +195,18 @@ body{
     }
     .bet__online__desc{
         padding: 5rem 0;
+    }
+    /* Blog  */
+    .blog__card{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .blog__card .col-10{
+        display: inline-block;
+    }
+    .blog__card-title, .blog__card-extract{
+        white-space: normal;
     }
     .footer{
         background-position: 20% center;
