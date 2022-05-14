@@ -58,6 +58,20 @@ a:hover{
     background-repeat: no-repeat;
     margin-left: 4rem;
 }
+
+.so__carousel-indicator{
+    position: inherit;
+    margin-top: 1rem;
+}
+.so__carousel-indicator [data-bs-target]{
+    width: 11px;
+    height: 11px;
+    border: 1px solid var(--so__blueLight);
+    border-radius: 50%;
+}
+.so__carousel-indicator .active{
+    background-color: var(--so__blueLight);
+}
 /* RANKING SECTION  */
 .ranking{
     background: var(--so__bgLightBlue);
@@ -163,11 +177,14 @@ a:hover{
         object-fit: cover;
 
     }
-.ranking__profile-header-title{
+.ranking__profile-header-title, .recommend__header-title{
     color: var(--so__title);
     font-size: 1.15rem;
 }
-
+.ranking__section{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--so__bgLightBlue);
+}
 .profile__section{
     background-color: var(--so__bgLightBlue);
     border-radius: 10px;
@@ -183,6 +200,29 @@ a:hover{
 }
 .profile__section-data-qua{
     color: var(--so__blueLight);
+}
+
+.recommend__card{
+    border-radius: 10px;
+    background-color: #FFFEF0;
+}
+.recommend__page-logo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.recommend__page-ranking, .recommend__bonus{
+    color: var(--so__blueLight);
+    font-size: 1.25rem;
+}
+.recommend__page-name{
+    font-size: 1.75rem;
+    color: var(--so__paragraph);
+}
+.recommend__img{
+    width: 190px;
+    bottom: 0px;
+    right: -30px;
 }
 /* TIPS      */
 
