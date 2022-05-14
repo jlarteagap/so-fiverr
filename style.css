@@ -78,6 +78,7 @@ a:hover{
     height: auto;
 }
 .header__burger{
+    visibility: hidden;
     background-color: var(--so__bgLightBlue);
     color: var(--so__paragraph);
     font-size: .85rem;
@@ -133,7 +134,7 @@ a:hover{
 .header__user-nick{
     border-bottom: 1px solid var(--so__yellow);
 }
-.header__user-flag{
+.header__user-flag-text{
     font-size: .85rem;
 }
 .header__user-flag-icon{
@@ -506,6 +507,34 @@ a:hover{
     }
 
 @media only screen and (max-width: 480px) {
+    .header__logo{
+        padding: 1rem 1.5rem;
+    }
+    .header__navbar{
+        padding: 0;
+    }
+    .header__burger{
+        visibility: visible !important;
+        padding: 2rem 1rem;
+        margin-right: -.75rem;
+    }
+    .header__user-nick, 
+    .header__user-flag, 
+    .header__user-profile-arrow, 
+    .header__search-input{
+        display: none !important;
+    }
+    .header__search-group-append{
+        border-radius: 50%;
+        border: 1px solid #E6E6E6 !important;
+    }
+    .breadcrumb-item:not(.active){
+        display: none;
+    }
+    .ranking__breadcrumbs .breadcrumb-item::before{
+        transform: rotate(-180deg);
+        padding: 0 1rem;
+    }
     .tips{
         background-color: var(--so__bgLightBlue);
     }

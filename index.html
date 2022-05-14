@@ -15,17 +15,17 @@
 
 <body>
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0 px-md-3">
+            <nav class="header__navbar navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="header__logo navbar-brand" href="#">
+              <a class="header__logo navbar-brand order-0" href="#">
                   <img src="./assets/img/logo.png" alt="logo" />
               </a>
-              <button class="header__burger navbar-toggler d-flex flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSO" aria-controls="navbarSO" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="header__burger order-2 navbar-toggler d-flex flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSO" aria-controls="navbarSO" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="mb-2" src="./assets/img/icons/burger.svg" alt="">
                 Menu
               </button>
-              <div class="collapse navbar-collapse" id="navbarSO">
+              <div class="collapse navbar-collapse order-4 order-md-1" id="navbarSO">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="header__nav-item nav-item">
                     <a class="header__nav-link nav-link active" aria-current="page" href="#">Tipy uživatelů</a>
@@ -37,7 +37,8 @@
                     <a class="header__nav-link nav-link" aria-current="page" href="#">Kurzové sázení</a>
                   </li>
                 </ul>
-                <div class="d-flex align-items-center gap-5">
+              </div>
+              <div class="d-flex order-1 order-md-2 align-items-center gap-3 gap-md-5">
                     <div class="">
                         <div class="input-group">
                             <input class="header__search-input form-control border-end-0 border" type="search" placeholder="Hledejte např. 5 tipů jak správně sázet…">
@@ -53,14 +54,13 @@
                             <img class="img-fluid" src="./assets/img/profile-ranking.png" alt="">
                         </div>
                         <div class="header__user-nick">Alena_33842 </div>
-                        <img src="./assets/img/icons/arrow-down.svg" alt="">
+                        <img class="header__user-profile-arrow" src="./assets/img/icons/arrow-down.svg" alt="">
                     </div>
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="header__user-flag d-flex align-items-center gap-3">
                         <img class="header__user-flag-icon" src="./assets/img/flags/usa.png" alt="flags">
-                        <div class="header__user-flag">USA</div>
+                        <div class="header__user-flag-text">USA</div>
                         <img src="./assets/img/icons/arrow-down.svg" alt="">
                     </div>
-                </div>
               </div>
             </div>
             </nav>
@@ -80,7 +80,7 @@
                 </nav>
             </div>
             <div class="row">
-                <div class="col-md-2 p-0">
+                <div class="col-md-2 p-md-0">
                     <div class="ranking__by-sports p-3">
                         <p class="ranking__by-sports-title f700">Podle sportu</p>
                         <div class="accordion accordion-flush" id="rankingAccordion">
