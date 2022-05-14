@@ -77,7 +77,11 @@ a:hover{
     width: 70px;
     height: auto;
 }
-
+.header__burger{
+    background-color: var(--so__bgLightBlue);
+    color: var(--so__paragraph);
+    font-size: .85rem;
+}
 .header__nav-link{
     color: #000;
     padding-bottom: .25rem;
