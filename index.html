@@ -15,7 +15,55 @@
 
 <body>
     <header>
-
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="header__logo navbar-brand" href="#">
+                  <img src="./assets/img/logo.png" alt="logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSO" aria-controls="navbarSO" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSO">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="header__nav-item nav-item">
+                    <a class="header__nav-link nav-link active" aria-current="page" href="#">Tipy uživatelů</a>
+                  </li>
+                  <li class="header__nav-item nav-item">
+                    <a class="header__nav-link nav-link" aria-current="page" href="#">Události</a>
+                  </li>
+                  <li class="header__nav-item nav-item">
+                    <a class="header__nav-link nav-link" aria-current="page" href="#">Kurzové sázení</a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center gap-5">
+                    <div class="">
+                        <div class="input-group">
+                            <input class="header__search-input form-control border-end-0 border" type="search" placeholder="Hledejte např. 5 tipů jak správně sázet…">
+                            <span class="input-group-append">
+                                <button class="header__search-group-append btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5" type="button">
+                                    <img src="./assets/img//icons/search.svg" alt="" width="90%">
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="f700 d-flex align-items-center gap-3">
+                        <div class="header__user-profile position-relative">
+                            <img class="img-fluid" src="./assets/img/profile-ranking.png" alt="">
+                        </div>
+                        <div class="header__user-nick">Alena_33842 </div>
+                        <img src="./assets/img/icons/arrow-down.svg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <img class="header__user-flag-icon" src="./assets/img/flags/usa.png" alt="flags">
+                        <div class="header__user-flag">USA</div>
+                        <img src="./assets/img/icons/arrow-down.svg" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+            </nav>
+        </div>
     </header>
     <!-- ranking  -->
     <section class="ranking py-4">
