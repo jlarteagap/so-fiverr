@@ -10,6 +10,14 @@
 body{
     font-family: 'Museo Sans Rounded 500';
 }
+a{
+    color: var(--so__blueLight);
+    text-decoration: none;
+    transition: all .3s;
+}
+a:hover{
+    color: var(--so__title);
+}
 .f700{ font-family: 'Museo Sans Rounded 700'; }
 .f900{ font-family: 'Museo Sans Rounded 900'; }
 
@@ -136,6 +144,45 @@ body{
     width: 14px;
     height: 14px;
     border-radius: 50%;
+}
+
+/* RANKING DATA PROFILE  */
+.ranking__profile{
+    background-color: white;
+    border-radius: 10px;
+}
+.ranking__profile-header-icon{
+    width: 41px !important;
+    height: 41px;
+    background-color: #F49310;
+    border-radius: 50%;
+}
+    .ranking__profile-header-icon img{
+        width: 18px;
+        height: auto;
+        object-fit: cover;
+
+    }
+.ranking__profile-header-title{
+    color: var(--so__title);
+    font-size: 1.15rem;
+}
+
+.profile__section{
+    background-color: var(--so__bgLightBlue);
+    border-radius: 10px;
+}
+.profile__section-top-img{
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50% ;
+}
+.profile__section-data-nick, .profile__section-stats{
+    color: var(--so__title);
+}
+.profile__section-data-qua{
+    color: var(--so__blueLight);
 }
 /* TIPS      */
 
