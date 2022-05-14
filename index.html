@@ -17,6 +17,216 @@
     <header>
 
     </header>
+    <!-- ranking  -->
+    <section class="ranking py-4">
+        <div class="container">
+            <div class="ranking__breadcrumbs">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.75' height='9' viewBox='0 0 15.75 9'%3E%3Cpath id='long-arrow-down-light' d='M8.877,42.935l-.249-.249a.422.422,0,0,0-.6,0L5.1,45.637V32.422A.422.422,0,0,0,4.676,32H4.325a.422.422,0,0,0-.422.422V45.637L.969,42.686a.422.422,0,0,0-.6,0l-.249.249a.422.422,0,0,0,0,.6l4.078,4.1a.422.422,0,0,0,.6,0l4.078-4.1A.422.422,0,0,0,8.877,42.935Z' transform='translate(-32 9) rotate(-90)' fill='%23aaa'/%3E%3C/svg%3E%0A &#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item f700"><a href="#">Sázení online</a></li>
+                        <li class="breadcrumb-item f700"><a href="#">Statistiky a výsledky</a></li>
+                        <li class="breadcrumb-item f700"><a href="#">Fotbal </a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Rankings</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-2 ranking__by-sports p-3">
+                    <p class="ranking__by-sports-title f700">Podle sportu</p>
+                    <div class="accordion accordion-flush" id="rankingAccordion">
+                        <div class="ranking__by-sports-item accordion-item">
+                          <h2 class="ranking__by-sports-header accordion-header mb-2" id="flush-headingOne">
+                            <button class="ranking__by-sports-title accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#tenis" aria-expanded="false" aria-controls="tenis">
+                              <img src="./assets/img/rankings/icon-tenis.svg" /> Tenis <span class="ranking__by-sports-header-number">7</span>
+                            </button>
+                          </h2>
+                          <div id="tenis" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#rankingAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="ranking__item-links">Scores</a></li>
+                                    <li><a href="#" class="ranking__item-links">Result & Stats</a></li>
+                                    <li><a href="#" class="ranking__item-links">Head2Head</a></li>
+                                    <li><a href="#" class="ranking__item-links select f700">Rankings</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ranking__by-sports-item accordion-item">
+                            <h2 class="ranking__by-sports-header accordion-header mb-2" id="flush-headingOne">
+                              <button class="ranking__by-sports-title accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#fotbal" aria-expanded="false" aria-controls="fotbal">
+                                <img src="./assets/img/rankings/icon-futbol.svg" /> Tenis <span class="ranking__by-sports-header-number">7</span>
+                              </button>
+                            </h2>
+                            <div id="fotbal" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#rankingAccordion">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="ranking__by-sports-item accordion-item">
+                            <h2 class="ranking__by-sports-header accordion-header mb-2" id="flush-headingOne">
+                              <button class="ranking__by-sports-title accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#box" aria-expanded="false" aria-controls="box">
+                                <img src="./assets/img/rankings/icon-box.svg" /> Tenis <span class="ranking__by-sports-header-number">7</span>
+                              </button>
+                            </h2>
+                            <div id="box" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#rankingAccordion">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="select__ranking p-3">
+                        <p class="select__ranking-title">Vyberte žebríček:</p>
+                        <div class="dropdown">
+                            <a class="btn btn__so btn__so-dropdown dropdown-toggle f900" href="#" role="button" id="selectRanking" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/img/rankings/icon-cup.svg" /> UEFA CLUB
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="selectRanking">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="show__countries p-3 mt-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">1.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">2.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">3.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">4.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">5.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">6.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">6.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">8.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">9.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">10.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">11.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/usa.png" alt="" /> USA
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-2">
+                            <div class="show__countries-table-left d-flex align-items-center gap-4">
+                                <div class="show__countries-table-pos">12.</div>
+                                <div class="show__countries-table-contry d-flex align-items-center gap-2">
+                                    <img src="./assets/img/flags/swiden.png" alt="" /> Švédsko 
+                                </div>
+                            </div>
+                            <div class="show__countries-table-right d-flex align-items-center gap-2">
+                                <img src="./assets/img/icons/star.svg" alt="" /> 23.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
     <!-- Tips  -->
     <section class="tips py-5">
         <div class="container">

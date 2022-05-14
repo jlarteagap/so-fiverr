@@ -39,7 +39,104 @@ body{
     .btn__so--outline:hover{
         background-color: var(--so__outline);
     }
+.btn__so-dropdown{
+    border: 1px solid #E6E6E6;
+}
+.btn__so-dropdown::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='15.75' viewBox='0 0 9 15.75'%3E%3Cpath id='long-arrow-down-light' d='M8.877,42.935l-.249-.249a.422.422,0,0,0-.6,0L5.1,45.637V32.422A.422.422,0,0,0,4.676,32H4.325a.422.422,0,0,0-.422.422V45.637L.969,42.686a.422.422,0,0,0-.6,0l-.249.249a.422.422,0,0,0,0,.6l4.078,4.1a.422.422,0,0,0,.6,0l4.078-4.1A.422.422,0,0,0,8.877,42.935Z' transform='translate(0 -32)'/%3E%3C/svg%3E ");
+    border: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-repeat: no-repeat;
+    margin-left: 4rem;
+}
+/* RANKING SECTION  */
+.ranking{
+    background: var(--so__bgLightBlue);
+}
+.ranking__breadcrumbs{
+    font-size: .9rem;
+}
+.ranking__breadcrumbs a {
+    color: var(--so__blueLight);
+    text-decoration: none;
+}
+.ranking__breadcrumbs .breadcrumb-item.active{
+    color: #000;
+}
 
+.ranking__by-sports{
+    background-color: white;
+    border-radius: 10px;
+}
+.ranking__by-sports-item{
+    border: none;
+}
+.ranking__by-sports-header{
+    border-radius: 10px;
+}
+.ranking__by-sports-title{
+    color: var(--so__title);
+    font-size: .85rem !important;
+    border-radius: 10px;
+}
+.ranking__by-sports .accordion-button::after{
+    background-image: none;
+}
+.ranking__by-sports .accordion-button.collapsed {
+    background: var(--so__bgLightBlue);
+    border: none;
+    border-radius: 10px;
+}
+.ranking__by-sports .accordion-button:not(.collapsed){
+    background-color: var(--so__blueLight);
+    color: white;
+    border-radius: 10px;
+}
+.ranking__by-sports .accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7.75' viewBox='0 0 9 15.75'%3E%3Cpath id='long-arrow-down-light' d='M8.877,42.935l-.249-.249a.422.422,0,0,0-.6,0L5.1,45.637V32.422A.422.422,0,0,0,4.676,32H4.325a.422.422,0,0,0-.422.422V45.637L.969,42.686a.422.422,0,0,0-.6,0l-.249.249a.422.422,0,0,0,0,.6l4.078,4.1a.422.422,0,0,0,.6,0l4.078-4.1A.422.422,0,0,0,8.877,42.935Z' transform='translate(0 -32)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    transform: rotate(0);
+}
+.ranking__by-sports-header-number{
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ranking__by-sports .accordion-button:not(.collapsed) .ranking__by-sports-header-number{
+    display: none;
+}
+.ranking__item-links{
+    text-decoration: none;
+    font-size: .85rem;
+    color: var(--so__title);
+}
+.select {
+    color: var(--so__blueLight);
+}
+
+/* SELECT RANKING  */
+.select__ranking, .show__countries{
+    background-color: white;
+    border-radius: 10px;
+}
+.select__ranking-title{
+    font-size: .7rem;
+}
+
+/* RANKINK COUNTRIES  */
+.show__countries-table{
+    background-color: var(--so__bgLightBlue);
+    border-radius: 10px;
+}
+.show__countries-table-contry img{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
 /* TIPS      */
 
 .tips__content-tabs{
