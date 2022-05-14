@@ -173,6 +173,20 @@ a:hover{
     font-size: .85rem !important;
     border-radius: 10px;
 }
+.ranking__by-sports .accordion-button::before{
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    content: '';
+    background-position: center center;
+    background-image: url(./assets/img/icons/plus.svg);
+    background-repeat: no-repeat;
+    background-size: .75rem;
+    transition: transform .2s ease-in-out ;
+}
+.ranking__by-sports .accordion-button:not(.collapsed)::before{
+    background-image: url(./assets/img/icons/minus.svg);
+}
 .ranking__by-sports .accordion-button::after{
     background-image: none;
 }
@@ -515,13 +529,15 @@ a:hover{
     }
     .header__burger{
         visibility: visible !important;
-        padding: 2rem 1rem;
+        padding: 1.5rem 2rem;
         margin-right: -.75rem;
     }
     .header__user-nick, 
     .header__user-flag, 
     .header__user-profile-arrow, 
-    .header__search-input{
+    .header__search-input,
+    .select__ranking-title
+    {
         display: none !important;
     }
     .header__search-group-append{
@@ -556,7 +572,7 @@ a:hover{
     .bet__online-img{
         width: 75%;
         left:-50px;
-        bottom: -160px;
+        bottom: -230px;
     }
     .bet__online__desc{
         padding: 5rem 0;
