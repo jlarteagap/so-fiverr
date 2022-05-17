@@ -49,6 +49,8 @@ a:hover{
     }
 .btn__so-dropdown{
     border: 1px solid #E6E6E6;
+    position: relative;
+    width: 100%;
 }
 .btn__so-dropdown::after{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='15.75' viewBox='0 0 9 15.75'%3E%3Cpath id='long-arrow-down-light' d='M8.877,42.935l-.249-.249a.422.422,0,0,0-.6,0L5.1,45.637V32.422A.422.422,0,0,0,4.676,32H4.325a.422.422,0,0,0-.422.422V45.637L.969,42.686a.422.422,0,0,0-.6,0l-.249.249a.422.422,0,0,0,0,.6l4.078,4.1a.422.422,0,0,0,.6,0l4.078-4.1A.422.422,0,0,0,8.877,42.935Z' transform='translate(0 -32)'/%3E%3C/svg%3E ");
@@ -57,6 +59,8 @@ a:hover{
     height: 1.25rem;
     background-repeat: no-repeat;
     margin-left: 4rem;
+    position: absolute;
+    right: 1.5rem;
 }
 
 .so__carousel-indicator{
@@ -73,6 +77,11 @@ a:hover{
     background-color: var(--so__blueLight);
 }
 /* HEADER  */
+.header{
+    max-height: 100px;
+    border-top: 3px solid var(--so__blueLight);
+    border-bottom: 1px solid var(--so__blueLight);
+}
 .header__logo img{
     width: 70px;
     height: auto;
@@ -81,7 +90,7 @@ a:hover{
     visibility: hidden;
     background-color: var(--so__bgLightBlue);
     color: var(--so__paragraph);
-    font-size: .85rem;
+    font-size: 14px;
 }
 .header__nav-link{
     color: #000;
@@ -94,13 +103,17 @@ a:hover{
 .header__nav-item .active{
     border-bottom: 1px solid var(--so__yellow);
 }
-
+.header__collapse-nav{
+    background-color: white;
+    padding: 1rem;
+    z-index: 10;
+}
 .header__search-input{
     border-radius: 30px 0 0 30px;
 }
 .header__search-input::placeholder{
     color: #C3C3C3;
-    font-size: .85rem;
+    font-size: 14px;
 }
 .header__search-group-append{
     border-radius: 0 30px 30px 0;
@@ -132,10 +145,11 @@ a:hover{
     border-radius: 50%;
 }
 .header__user-nick{
+    font-size: 14px;
     border-bottom: 1px solid var(--so__yellow);
 }
 .header__user-flag-text{
-    font-size: .85rem;
+    font-size: 14px;
 }
 .header__user-flag-icon{
     width: 22px;
@@ -148,7 +162,7 @@ a:hover{
     background: var(--so__bgLightBlue);
 }
 .ranking__breadcrumbs{
-    font-size: .9rem;
+    font-size: 14px;
 }
 .ranking__breadcrumbs a {
     color: var(--so__blueLight);
@@ -161,6 +175,7 @@ a:hover{
 .ranking__by-sports{
     background-color: white;
     border-radius: 10px;
+    
 }
 .ranking__by-sports-item{
     border: none;
@@ -170,8 +185,11 @@ a:hover{
 }
 .ranking__by-sports-title{
     color: var(--so__title);
-    font-size: .85rem !important;
+    font-size: 14px !important;
     border-radius: 10px;
+}
+.rankin__dropdown-sports{
+    display: none;
 }
 .ranking__by-sports .accordion-button::before{
     flex-shrink: 0;
@@ -218,7 +236,7 @@ a:hover{
 }
 .ranking__item-links{
     text-decoration: none;
-    font-size: .85rem;
+    font-size: 14px;
     color: var(--so__title);
 }
 .select {
@@ -231,14 +249,15 @@ a:hover{
     border-radius: 10px;
 }
 .select__ranking-title{
-    font-size: .7rem;
+    font-size: 12px;
 }
 
 /* RANKINK COUNTRIES  */
 .show__countries-table{
     background-color: var(--so__bgLightBlue);
     border-radius: 10px;
-}
+    font-size: 14px;
+    max-height: 36x;}
 .show__countries-table-contry img{
     width: 14px;
     height: 14px;
@@ -264,7 +283,7 @@ a:hover{
     }
 .ranking__profile-header-title, .recommend__header-title{
     color: var(--so__title);
-    font-size: 1.15rem;
+    font-size: 20px;
 }
 .ranking__section{
     padding-bottom: 2rem;
@@ -280,9 +299,14 @@ a:hover{
     object-fit: cover;
     border-radius: 50% ;
 }
-.profile__section-data-nick, .profile__section-stats{
+.profile__section-data-nick{
+    font-size:20px;
     color: var(--so__title);
 }
+.profile__section-stats, .profile__section-link{
+    font-size: 14px;
+}
+
 .profile__section-data-qua{
     color: var(--so__blueLight);
 }
@@ -298,10 +322,10 @@ a:hover{
 }
 .recommend__page-ranking, .recommend__bonus{
     color: var(--so__blueLight);
-    font-size: 1.25rem;
+    font-size: 22px;
 }
 .recommend__page-name{
-    font-size: 1.75rem;
+    font-size: 30px;
     color: var(--so__paragraph);
 }
 .recommend__img{
@@ -310,7 +334,9 @@ a:hover{
     right: -30px;
 }
 /* TIPS      */
-
+.tips__header-title{
+    font-size: 30px;
+}
 .tips__content-tabs{
     border: none
 }
@@ -318,6 +344,9 @@ a:hover{
     color: #050505 !important;
     background-color: transparent !important;
     border: none !important;
+}
+.tips__content-tabs .nav-link{
+    font-size: 14px;
 }
 .tips__content-tabs .nav-link.active::after{
     content: '';
@@ -339,30 +368,30 @@ a:hover{
         border-radius: 50%;
     }
     .tab__card-team{
-        font-size: 1rem;
+        font-size: 20px;
         color: var(--so__title);
     }
     .tab__card-vs{
-        font-size: .95rem;
+        font-size: 15px;
         color: #AAAAAA;
     }
     .tab__card-time{
-        font-size: 1rem;
+        font-size: 16px;
     }
 
         .tab__card-info-data{
-            font-size: .9rem;
+            font-size: 15px;
             color: #AAAAAA;
         }
 
         .tab__card-footer-like-text{
-            font-size: .75rem;
+            font-size: 14px;
         }
         .tab__card-footer-comment-number{
             color: var(--so__blueLight);
             width: 23px;
             height: 23px;
-            font-size: .75rem;
+            font-size: 14px;
             background-color: var(--so__bgLightBlue);
             display: flex;
             justify-content: center;
@@ -378,6 +407,7 @@ a:hover{
     background: var(--so__bgLightBlue);
 }
 .blog__header-title{
+    font-size: 30px;
     color: var(--so__title);
 }
 
@@ -392,7 +422,7 @@ a:hover{
     }
     .blog__card-time{
         color: #000;
-        font-size: .85rem;
+        font-size: 14px;
         background-color: white;
         border-radius: 10px;
         bottom: .7rem;
@@ -401,7 +431,7 @@ a:hover{
     }
 
     .blog__card-title{
-        font-size: 1.25rem;
+        font-size: 22px;
         line-height: 1.25;
     }
     .blog__card-profile-img{
@@ -412,11 +442,14 @@ a:hover{
         border-radius: 50%;
     }
     .blog__card-profile-autor{
-        font-size: .85rem;
+        font-size: 14px;
         color: #989898;
     }
+    .blog__card-profile-name{
+        font-size: 14px;
+    }
     .blog__card-extract{
-        font-size: .9rem;
+        font-size: 15px;
     }
 /* WHY. BET ONLINE  */
 .bet__online{
@@ -424,7 +457,7 @@ a:hover{
 }
 .bet__online-title{
     color: var(--so__title);
-    font-size: 1.5rem;
+    font-size: 30px;
 }
 .bet__online-icons{
     width: 44px;
@@ -437,11 +470,12 @@ a:hover{
     right: 0;
 }
 .bet__online-desc{
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--so__paragraph);
 }
 
 .bet__online__desc-title{
+    font-size: 30px;
     color: var(--so__title);
 }
 .bet__online__desc-title::before{
@@ -455,7 +489,7 @@ a:hover{
 }
 .bet__online__desc-p{
     color: #050505;
-    font-size: .85rem;
+    font-size: 14px;
 }
 /* footer  */
 .footer{
@@ -469,7 +503,7 @@ a:hover{
 }
 
     .footer__header-title{
-        font-size: 1.15rem;
+        font-size: 22px;
     }
 /* Footer Subscribe  */
 .btn__subcribe{
@@ -497,11 +531,11 @@ a:hover{
     background-color: var(--so__yellow);
 }
 .footer__widget-list{
-    font-size: .85rem;
+    font-size: 14px;
 }
 
 .copyrights{
-    font-size: .85rem;
+    font-size: 14px;
 }
     /* Social icons  */
     .social__icon{
@@ -521,6 +555,9 @@ a:hover{
     }
 
 @media only screen and (max-width: 480px) {
+    .header{
+        max-height: 90px;
+    }
     .header__logo{
         padding: 1rem 1.5rem;
     }
@@ -531,6 +568,9 @@ a:hover{
         visibility: visible !important;
         padding: 1.5rem 2rem;
         margin-right: -.75rem;
+    }
+    .ranking__by-sports{
+        display: none;
     }
     .header__user-nick, 
     .header__user-flag, 
@@ -550,6 +590,19 @@ a:hover{
     .ranking__breadcrumbs .breadcrumb-item::before{
         transform: rotate(-180deg);
         padding: 0 1rem;
+    }
+    .btn__so-dropdown{
+        position: relative;
+        width: 100%;
+    }
+    .btn__so-dropdown::after{
+        position: absolute;
+        right: 1.5rem;
+    }
+    .rankin__dropdown-sports{
+        background: white;
+        border-radius: 10px;
+        display: block;
     }
     .tips{
         background-color: var(--so__bgLightBlue);

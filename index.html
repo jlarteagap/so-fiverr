@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container-fluid p-0 px-md-3">
             <nav class="header__navbar navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -25,16 +25,16 @@
                 <img class="mb-2" src="./assets/img/icons/burger.svg" alt="">
                 Menu
               </button>
-              <div class="collapse navbar-collapse order-4 order-md-1" id="navbarSO">
+              <div class="collapse navbar-collapse header__collapse-nav order-4 order-md-1" id="navbarSO">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="header__nav-item nav-item">
-                    <a class="header__nav-link nav-link active" aria-current="page" href="#">Tipy uživatelů</a>
+                    <a class="header__nav-link f700 nav-link active" aria-current="page" href="#">Tipy uživatelů</a>
                   </li>
                   <li class="header__nav-item nav-item">
-                    <a class="header__nav-link nav-link" aria-current="page" href="#">Události</a>
+                    <a class="header__nav-link f700 nav-link" aria-current="page" href="#">Události</a>
                   </li>
                   <li class="header__nav-item nav-item">
-                    <a class="header__nav-link nav-link" aria-current="page" href="#">Kurzové sázení</a>
+                    <a class="header__nav-link f700 nav-link" aria-current="page" href="#">Kurzové sázení</a>
                   </li>
                 </ul>
               </div>
@@ -123,12 +123,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="rankin__dropdown-sports p-3 dropdown">
+                        <a class="btn btn__so btn__so-dropdown dropdown-toggle  f900" href="#" role="button" id="rankingSport" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/img/rankings/icon-tenis.svg" /> Tenis
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="rankingSport">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="col-md-7">
                     <div class="select__ranking p-3 mt-3 mt-md-0">
                         <p class="select__ranking-title">Vyberte žebríček:</p>
                         <div class="dropdown">
-                            <a class="btn btn__so btn__so-dropdown dropdown-toggle f900" href="#" role="button" id="selectRanking" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn__so btn__so-dropdown dropdown-toggle f900" href="#" role="button" id="rankingSport" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="./assets/img/rankings/icon-cup.svg" /> UEFA CLUB
                             </a>
                           
@@ -140,7 +151,7 @@
                           </div>
                     </div>
                     <div class="show__countries p-3 mt-3">
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">1.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -151,7 +162,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">2.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -162,7 +173,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">3.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -173,7 +184,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">4.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -184,7 +195,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">5.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -195,7 +206,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">6.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -206,7 +217,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">6.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -217,7 +228,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">8.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -228,7 +239,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">9.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -239,7 +250,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">10.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -250,7 +261,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">11.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -261,7 +272,7 @@
                                 <img src="./assets/img/icons/star.svg" alt="" /> 23.000
                             </div>
                         </div>
-                        <div class="show__countries-table d-flex justify-content-between px-3 py-3 mb-3">
+                        <div class="show__countries-table d-flex justify-content-between px-3 py-2 mb-3">
                             <div class="show__countries-table-left d-flex align-items-center gap-4">
                                 <div class="show__countries-table-pos">12.</div>
                                 <div class="show__countries-table-contry d-flex align-items-center gap-2">
@@ -304,7 +315,7 @@
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-money.svg" alt="" /> 24</div>
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-trophy.svg" alt="" /> 70</div>
                                         </div>
-                                        <div class="mt-4">
+                                        <div class="profile__section-link mt-4">
                                             <a href="#" class="d-flex align-items-center gap-3">Zobrazit profil <img
                                                     src="./assets/img//icons/arrow-right-blue.svg" /></a>
                                         </div>
@@ -328,7 +339,7 @@
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-money.svg" alt="" /> 24</div>
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-trophy.svg" alt="" /> 70</div>
                                         </div>
-                                        <div class="mt-4">
+                                        <div class="profile__section-link mt-4">
                                             <a href="#" class="d-flex align-items-center gap-3">Zobrazit profil <img
                                                     src="./assets/img//icons/arrow-right-blue.svg" /></a>
                                         </div>
@@ -352,7 +363,7 @@
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-money.svg" alt="" /> 24</div>
                                             <div class="d-flex gap-2"><img src="./assets/img/rankings/icon-trophy.svg" alt="" /> 70</div>
                                         </div>
-                                        <div class="mt-4">
+                                        <div class="profile__section-link mt-4">
                                             <a href="#" class="d-flex align-items-center gap-3">Zobrazit profil <img
                                                     src="./assets/img//icons/arrow-right-blue.svg" /></a>
                                         </div>
@@ -733,7 +744,7 @@
                     <img class="bet__online-img" src="./assets/img/bet__widget-img.png" />
                 </div>
                 <div class="bet__online-content col-12 col-md-8 order-0 order-sm-1">
-                    <h3 class="bet__online-title text-center text-sm-start py-5">Proč sázeni on-line</h3>
+                    <h3 class="bet__online-title f900 text-center text-sm-start py-5">Proč sázeni on-line</h3>
                     <div class="row px-3 pb-5">
                         <div class="col-12 col-md-6 d-flex gap-4">
                             <div class="bet__online-icons">
@@ -775,7 +786,7 @@
     <section class="bet__online__desc">
         <div class="container">
             <div class="col-12 col-sm-5 mx-auto py-5 ">
-                <h4 class="bet__online__desc-title">Sázení online</h4>
+                <h4 class="bet__online__desc-title f900">Sázení online</h4>
                 <p class="bet__online__desc-p">Sázejte online, sledujte zápasy na TV Tipsport, bavte se v diskuzním fóru
                     nebo se inspirujte
                     analýzami úspěšných sázkařů. Sázejte online,
